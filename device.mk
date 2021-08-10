@@ -39,7 +39,6 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vendor \
     vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -379,6 +378,10 @@ PRODUCT_COPY_FILES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+	
+#Zenparts
+PRODUCT_PACKAGES += \
+	ZenParts
 
 # Power
 PRODUCT_PACKAGES += \
