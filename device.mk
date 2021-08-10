@@ -39,6 +39,7 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
+	vendor \
     vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -248,13 +249,13 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 # FM
-#PRODUCT_PACKAGES += \
-#    android.hardware.broadcastradio@1.0-impl \
-#    FM2 \
-#    libqcomfm_jni \
-#    qcom.fmradio
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 
-#PRODUCT_BOOT_JARS += qcom.fmradio
+PRODUCT_BOOT_JARS += qcom.fmradio
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -312,8 +313,8 @@ PRODUCT_PACKAGES += \
     lights.sdm845
 
 # LiveDisplay
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.0-service-sdm
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -381,7 +382,7 @@ PRODUCT_PACKAGES += \
 	
 #Zenparts
 PRODUCT_PACKAGES += \
-	ZenParts
+	ZenfoneParts
 
 # Power
 PRODUCT_PACKAGES += \
