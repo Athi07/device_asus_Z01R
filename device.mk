@@ -26,6 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+PRODUCT_BOARD_PLATFORM := sdm845
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
@@ -207,7 +210,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.target.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    apex_metadata.rc
 
 # Context Hub
 PRODUCT_PACKAGES += \
@@ -375,9 +379,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 	
 #Zenparts
 PRODUCT_PACKAGES += \
