@@ -42,6 +42,7 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
+    vendor \
     vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -409,6 +410,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
+
+#RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RenderScript
 PRODUCT_PACKAGES += \

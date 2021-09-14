@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_Z01R.mk
+    $(LOCAL_DIR)/dot_Z01R.mk

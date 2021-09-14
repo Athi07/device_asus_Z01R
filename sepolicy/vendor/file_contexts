@@ -56,6 +56,7 @@
 
 # HALs
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.asus_Z01R                                         u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/lineage\.touch@1\.0-service\.asus_Z01R	                                                u:object_r:hal_lineage_touch_asus_Z01R_exec:s0
 
 
 # Sysfs
